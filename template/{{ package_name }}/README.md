@@ -31,7 +31,42 @@ Once you have the directory on your computer, change (`cd`) into it.
 If you're in a conda environment, deactivate it by running `conda deactivate`.
 
 
-Then, run:
+Then, follow the install instructions below, based on your machine's architecture:
+
+<details>
+<summary><strong>🍏&nbsp;Apple Silicon (ARM)</strong></summary>
+<p>&nbsp;</p>
+
+Start by creating a new conda environment:
+
+```shell
+CONDA_SUBDIR=osx-64 conda env create -n {{ package_name }}-dev --file ./environment-files/{{ package_name }}-qiime2-{{ target_distro }}-dev.yml
+```
+
+After this completes, activate the new environment you created by running:
+
+```shell
+conda activate {{ package_name }}-dev
+```
+
+Once this new environment has been activated, update your conda config to set the subdir to osx-64:
+
+```shell
+conda config --env --set subdir osx-64
+```
+
+Finally, run:
+
+```shell
+make install
+```
+</details>
+
+<details>
+<summary><strong>🛠&nbsp;All other architectures (Apple Intel, Linux, WSL)</strong></summary>
+<p>&nbsp;</p>
+
+Start by creating a new conda environment:
 
 ```shell
 conda env create -n {{ package_name }}-dev --file ./environment-files/{{ package_name }}-qiime2-{{ target_distro }}-dev.yml
@@ -48,6 +83,7 @@ Finally, run:
 ```shell
 make install
 ```
+</details>
 
 ## Testing and using the most recent development version of `{{ package_name }}`
 
