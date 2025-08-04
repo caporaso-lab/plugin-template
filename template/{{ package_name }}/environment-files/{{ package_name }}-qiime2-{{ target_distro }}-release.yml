@@ -10,7 +10,9 @@ dependencies:
   # Note 2: Add any additional pip dependencies here.
   #   - # some pip dependency
   # Note 3: If you host your repository on GitHub, and you uncomment and modify
-  # the following lines to replace REPO-OWNER with the user or organization
-  # name that owns the repository, your installation commands can be updated to
-  # install from this file without additional steps.
-  #   - "{{ package_name }} @ git+https://github.com/REPO-OWNER/{{ package_name }}.git"
+  # the following lines to replace:
+  # REPO-OWNER with the user or organization name that owns the repository
+  # DEFAULT-BRANCH with the default branch of the repository (typically 'main')
+  # Your installation commands can be updated to install
+  # from this file without additional steps.
+  #   - {{ package_name }}@git+https://github.com/REPO-OWNER/{{ package_name }}.git@DEFAULT-BRANCH
