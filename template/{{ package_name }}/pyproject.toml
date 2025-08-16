@@ -36,7 +36,7 @@ dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
 distance-dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
 
 [tool.versioningit.write]
-file = "{{ package_name }}/_version.py"
+file = "{{ module_name }}/_version.py"
 
 [tool.versioningit]
 default-version = "0.0.dev0"
