@@ -119,7 +119,7 @@ Have fun! 😎
 
 ## About
 
-The `{{ package_name }}` Python package was [created from a template](https://develop.qiime2.org/en/latest/plugins/tutorials/create-from-template.html).
+The `{{ package_name }}` Python package was [created from a template](https://develop.qiime2.org/en/stable/plugins/tutorials/create-from-template.html).
 To learn more about `{{ package_name }}`, refer to the [project website]({{ project_url }}).
 To learn how to use QIIME 2, refer to the [QIIME 2 User Documentation](https://docs.qiime2.org).
 To learn QIIME 2 plugin development, refer to [*Developing with QIIME 2*](https://develop.qiime2.org).
