@@ -1,8 +1,8 @@
 # QIIME 2 Plugin [Copier](https://copier.readthedocs.io) template
 
 This is a Copier template for creating new QIIME 2 plugins.
-To learn how to use this, refer to the [Plugin Development Tutorial](https://develop.qiime2.org/en/latest/plugins/tutorials/intro.html) in *Developing with QIIME 2* (https://develop.qiime2.org).
-Specific usage instructions can be found [here](https://develop.qiime2.org/en/latest/plugins/tutorials/create-from-template.html).
+To learn how to use this, refer to the [Plugin Development Tutorial](https://develop.qiime2.org/en/stable/plugins/tutorials/intro.html) in *Developing with QIIME 2* (https://develop.qiime2.org).
+Specific usage instructions can be found [here](https://develop.qiime2.org/en/stable/plugins/tutorials/create-from-template.html).
 
 Happy developing!
 
