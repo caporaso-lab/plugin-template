@@ -29,7 +29,7 @@ plugin_short_description:
   help: Shorter description, shown when plugin is presented in a list
 target_distro:
   default: tiny
-  choices: [tiny, amplicon, metagenome]
+  choices: [tiny, qiime2, moshpit, pathogenome]
   help: Target distribution (if you're not sure, stick with the default).
 license:
   default: skip-license

@@ -38,8 +38,8 @@ jobs:
     - name: Set up Conda
       uses: qiime2-cutlery/setup-miniconda@v3
       with:
-        activate-environment: q2-hello-world-qiime2-tiny-dev
-        environment-file: q2-hello-world/environment-files/q2-hello-world-qiime2-tiny-dev.yml
+        activate-environment: q2-hello-world-rachis-tiny-dev
+        environment-file: q2-hello-world/environment-files/q2-hello-world-rachis-tiny-dev.yml
         auto-activate-base: false
 
     - name: Install plugin
