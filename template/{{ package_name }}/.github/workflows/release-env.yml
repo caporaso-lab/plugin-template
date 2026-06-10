@@ -76,7 +76,7 @@ jobs:
           released_epoch = os.environ['RELEASED_EPOCH']
 
           release_env_path = \
-            f'environment-files/{pkg_name}-qiime2-{target_distro}-release.yml'
+            f'environment-files/{pkg_name}-rachis-{target_distro}-release.yml'
 
           if not os.path.exists(release_env_path):
             raise Exception(f'{release_env_path} not found.')
@@ -128,7 +128,7 @@ jobs:
           if not updated:
             raise ValueError(f'No pip install found for package {pkg_name}.')
 
-          new_env_path = f'environment-files/{pkg_name}-qiime2-{target_distro}-{released_epoch}-release-{os.environ['RELEASE_TAG']}.yml'
+          new_env_path = f'environment-files/{pkg_name}-rachis-{target_distro}-{released_epoch}-release-{os.environ['RELEASE_TAG']}.yml'
           with open(new_env_path, 'w') as fh:
             yaml.safe_dump(env_data, fh, sort_keys=False)
 
@@ -184,7 +184,7 @@ jobs:
         run: |
           set -e
           git checkout automated/release-${{ '{{' }} env.RELEASE_TAG {{ '}}' }}-env-file-updates
-          ENV_PATH="environment-files/${{ '{{' }} env.PACKAGE_NAME {{ '}}' }}-qiime2-${{ '{{' }} env.TARGET_DISTRO {{ '}}' }}-${{ '{{' }} env.RELEASED_EPOCH {{ '}}' }}-release-${{ '{{' }} env.RELEASE_TAG {{ '}}' }}.yml"
+          ENV_PATH="environment-files/${{ '{{' }} env.PACKAGE_NAME {{ '}}' }}-rachis-${{ '{{' }} env.TARGET_DISTRO {{ '}}' }}-${{ '{{' }} env.RELEASED_EPOCH {{ '}}' }}-release-${{ '{{' }} env.RELEASE_TAG {{ '}}' }}.yml"
 
           conda env create -n test-release-env -f "$ENV_PATH"
 

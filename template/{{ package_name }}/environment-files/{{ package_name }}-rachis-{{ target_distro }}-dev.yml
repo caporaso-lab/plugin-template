@@ -1,9 +1,9 @@
 channels:
-- https://packages.qiime2.org/qiime2/stable/{{ target_distro }}/released
+- https://packages.qiime2.org/qiime2/latest/{{ target_distro }}/passed
 - conda-forge
 - bioconda
 dependencies:
-  - qiime2-{{ target_distro }}
+  - rachis-{{ target_distro }}
   # Note 1: Add any additional conda dependencies here.
   - pip
   - pip:
